@@ -1,0 +1,73 @@
+.actions {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+
+  .mode-select {
+    width: 150px;
+    margin-right: 15px;
+    border: black 1px solid;
+    cursor: pointer;
+  }
+
+  button {
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+
+    &:disabled {
+      cursor: not-allowed;
+      background: gray;
+      border: gray;
+    }
+
+    &:active {
+      background: darkblue;
+    }
+
+    &.start-button:not(:disabled) {
+      background: #2f70d1;
+      border: 1px solid #2f70d1;
+    }
+
+    &.stop-button {
+      background: darkred;
+      border: 1px solid darkred;
+    }
+  }
+}
+
+.field {
+  display: flex;
+
+  .board {
+    margin-right: 50px;
+
+    .row {
+      display: flex;
+
+      .square {
+        height: 40px;
+        width: 40px;
+        border: black solid 1px;
+      }
+    }
+  }
+
+  .hover-info-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+    background: #fbf8e5;
+    border: #faf2de 1px solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #877044;
+  }
+
+  h1 {
+    margin: 0 0 15px 0;
+  }
+}
